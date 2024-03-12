@@ -1,0 +1,16 @@
+# Declare the tokens per document type #
+# '\' must be escaped as '\\\\'
+# ------------------------------------ #
+tokens:
+  .tex:
+    placeholder_prefix: "<<"
+    placeholder_suffix: ">>"
+    single_line_comment_prefix: "%"
+    block_comment_prefix: "\\\\iffalse"  # \iffalse
+    block_comment_suffix: "\\\\fi"  # \fi
+  .ly:
+    placeholder_prefix: "<<"
+    placeholder_suffix: ">>"
+    single_line_comment_prefix: "%"
+    block_comment_prefix: "%{"
+    block_comment_suffix: "%}"
